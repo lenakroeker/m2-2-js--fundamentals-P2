@@ -9,12 +9,20 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let numC = 0;
+  for (let i = 0; i < str.length; i++){
+      if(str[i] === char){
+        numC++
+      }
+  }
+  return numC;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(countChar("BananaBabyBubbles", "a"));
-
+console.log(countChar("meowmeowmoewmoew", "a"));
+console.log(countChar("Btatatata", "B"));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)

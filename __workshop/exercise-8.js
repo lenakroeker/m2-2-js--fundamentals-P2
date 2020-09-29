@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  let greeting = list.map(word => `Hello ${word}`);
+  return greeting;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

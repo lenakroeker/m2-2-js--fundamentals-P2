@@ -7,10 +7,16 @@
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
   // grades is an array of numbers
+  total = 0
+  for(let i = 0; i <grades.length; i++){
+    total += grades[i];
+  }
+  return Math.round(total / grades.length);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
-
+console.log(calculateAverage([23, 56, 87, 12, 99, 12, 34]));
+console.log(calculateAverage([23, 56, 87, 99, 99, 98, 34]));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)

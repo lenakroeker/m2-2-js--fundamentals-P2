@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function removeEvens(list) {
   // list is an array of numbers
+  let oddList = list.filter(num => num % 2 === 1);
+  return oddList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

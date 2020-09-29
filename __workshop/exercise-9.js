@@ -10,11 +10,16 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  let longNames = list.filter(name => name.length >= 4);
+  let longHi = longNames.map(name => `Hello ${name}`);
+  return longHi;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
+console.log(greetLong(["Scott", "Bob", "Ricky", "Jimmy"]));
+console.log(greetLong(["Sam", "Bobby", "Ric", "Jim"]));
 
 // Create more test cases.
 

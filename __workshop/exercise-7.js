@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  var bigList = list.filter(word => word.length > 5);
+  return bigList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

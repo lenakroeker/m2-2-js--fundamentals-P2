@@ -9,10 +9,12 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
+  return list.every(word => word.length > 4);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
-
+console.log(allLong(["me", "hhhhhe", "gre", "hiohioh", "o", "ji"]));
+console.log(allLong(["mevghuj", "grevhj", "ovbhh", "jibjb"]));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)
